@@ -1,99 +1,66 @@
 <html>
-  <head> 
- 
-    <!--Başlık-->
-    <title>İlk Dosyam</title>
-    <!-- Açıklama -->
-    <meta name="description" content="Türkiye'nin Pervanesi" />
-    <meta name="keywords" content="eriş,pervane,gemi,deniz,döküm"/>
+  <head>
+    <title>Eriş Pervane</title>
 
-    <!--Gerekli CSS ve JavaScript dosyaları-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
 
-    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
 
-</head>
-<body>
-
-    <div style="background-color: rgb(124, 192, 255);">
-<h1 style="color:red;">ERİŞ PERVANE
-</h1>    
-<h2 style="text-decoration: underline;">TÜRKİYE'NİN PERVANESİ
-</h2>
-    <P>Eriş Pervaneleri, denizcilik sektöründeki 50 yılı aşkın tecrübesiyle Türkiye'nin en önde gelen bot, tekne, yat ve gemi pervaneleri imalatçısıdır.</P>
- </div>
-
-       <p>Detaylı bilgi <strong>için</strong> </p>
- <a style="text-decoration: none;" href="http://erispervane.com" target="_blank">Tıkla</a>
-</div>
-<div style="background-color: #e5e5e5;">
- <h2 style="color: #962a2a;">Galeri</h2>
- <img src="http://erispervane.com/storage/650/26678534_519152421804481_4135693302592445693_o.jpeg" style="height: 200px;" />
- <img src="https://erispervane.com/assets/frontend/images/erispervane.jpeg" style="height: 200px;" />
-</div>
-<div style="background-color: bisque;">
- <table>
-   <!-- Tablo için satırlar -->
-   <tr>
-     <th>
-       Seri
-     </th>
-     <th>
-       Model
-     </th>
-   </tr>
-   <!-- İkinci satır -->
-   <tr>
-     <td>
-        E Serisi
-     </td>
-     <td>
-        EP 3-20
-     </td>
-   </tr>
-   <!-- Üçüncü satır -->
-   <tr>
-     <td>
-        R Serisi
-     </td>
-     <td>
-        EP 4-10
-     </td>
-   </tr>
- </table>
-</div>
-<div style="background-color: #e5e5e5;">
- <h2 style="color: #962a2a;">Üretim</h2>
- <ul>
-   <li>ERİS PERVANELERİ dünyanın en güvenilir pervane seçim ve analiz programlarının sonuçlarını, yılların getirdiği tecrübeleriyle birleştirerek müşterilerine en uygun pervane projelerini sunmaktadır .Aynı zamanda tekne sahiplerinin istekleri ve projeleri doğrultusunda da üretim yapmaktadır.Ana hatlarıyla üretim sürecimiz model belirleme, kalıplama, döküm, torna- tesviye ,balans ve son kontrollerin ardından paketleme-kasalama olarak işlemektedir.</li>
- </ul>
-</div>
-</div>
-<div style="background-color: #e5e5e5;">
- <h2 style="color: #962a2a;">MODEL SEÇİMİ VE OLUŞTURULMASI</h2>
- <ul>
-   <li>EP, stoklarındaki 1000 e yakın standart pervane modelinin yanısıra; AMD(Arda modelleme sistemi) ve CAD-CAM (Bilgisayar destekli dizayn ve üretim)sayesinde teknenizin hususiyetine uygun olarak hazırlanan sayısız model üretme imkanına sahiptir.Model'in CNC makinalarda işlenmesi kanat geometrisine yüksek hassasiyet sağlıyor ve üretilen modelin verimini maksimuma çıkarıyor.</li>
- </ul>
-</div>
-<div style="background-color: #e5e5e5;">
-    <h2 style="color: #962a2a;">KALIPLAMA</h2>
-    <ul>
-      <li>Dökümhanemizde 100mm'den 2500mm çapa kadar 2,3,4,5 kanat Wageningen, Gawn, Kaplan tipi pervanelerin kalıpları işinin ehli ve tecrübeli ustalar tarafından yapılmaktadır.</li>
-    </ul>
-   </div>
-<div style="background-color: #e5e5e5;">
- <h2 style="color: #962a2a;">İletişim</h2>
- <form action="#">
-   <label for="name">İsim</label>
-   <input id="name" style="background-color: #ccc;" type="text" maxlength="16" required/>
-   <label for="gender">Cinsiyet</label>
-   <select id="gender">
-     <option value="dusuk">Erkek</option>
-     <option value="yuksek">Kadın</option>
-   </select>
-   <label for="message">Mesajınız</label>
-   <textarea id="message" rows="4" ></textarea>
-   <button type="reset">Temizle</button>
-   <button type="submit">Gönder</button>
- </form>
-</body>
+  <body>
+    <!-- Ana kutumuz -->
+    <div id="container">
+      <!-- Sitemizin üst kısmı -->
+      <header>
+        <a class="title" href="/">Eriş Pervane</a>
+        <nav class="navigation">
+          <a href="/hakkımızda.html">Hakkımızda</a>
+          <a class="contact" href="mailto:hi@ogulcan.dev">İletişim</a>
+        </nav>
+      </header>
+      <!-- Hero -->
+      <section class="hero">
+        <h1>Denizcilik sektöründeki 50 yılı aşkın tecrübe. 
+          
+        </h1>
+      </section>
+      <!-- Articles -->
+      <section class="articles">
+        <h2>MENÜLER</h2>
+        <div class="grid-group">
+          <!-- Yazı -->
+          <div class="grid-item">
+            <img src="http://erispervane.com/storage/643/kalip-min.jpg" alt=""/>
+            <h3>Ürünlerimiz</h3>
+            <span class="category">Kaplan Serisi</span>, 
+            <span class="category">Yelkenli Serisi</span>
+          </div>
+          <!-- Yazı -->
+          <div class="grid-item">
+            <img src="http://erispervane.com/storage/650/26678534_519152421804481_4135693302592445693_o.jpeg" alt=""/>
+            <h3>Üretim</h3>
+            <span class="category">Dümen, dümen yekesi, parakete-klen-şaft takımları, somun, kampana, muhtelif ölçülerde gemi tutyası imalatı da yapmaktayız.</span>    
+            
+          </div>
+          <!-- Yazı -->
+          <div class="grid-item">
+            <img src="https://erispervane.com/assets/frontend/images/uretim7.jpeg" alt=""/>
+            <h3>Döküm</h3>
+            
+          </div>
+          <!-- Yazı -->
+          <div class="grid-item">
+            <img src="https://erispervane.com/assets/frontend/images/uretim3.jpeg   " alt=""/>
+            <h3>Baş Pervane</h3>
+            
+            
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
