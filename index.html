@@ -1,0 +1,51 @@
+<html>
+  <head> 
+ 
+    <!--Başlık-->
+    <title>İlk Dosyam</title>
+    <!-- Açıklama -->
+    <meta name="description" content="Türkiye'nin Pervanesi" />
+    <meta name="keywords" content="eriş,pervane,gemi,deniz,döküm"/>
+
+    <!--Gerekli CSS ve JavaScript dosyaları-->
+
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+<body>
+
+    <div style="background-color: rgb(124, 192, 255);">
+<h1 style="coolor:red;">ERİŞ PERVANE
+</h1>    
+<h2 style="text-decoration: underline;">TÜRKİYE'NİN PERVANESİ
+</h2>
+    <P>Eriş Pervaneleri, denizcilik sektöründeki 50 yılı aşkın tecrübesiyle Türkiye'nin en önde gelen bot, tekne, yat ve gemi pervaneleri imalatçısıdır.</P>
+ </div>
+ <div style="background-color: #EEE1DE;">
+    <video id="video" width="320" height="240" ></video>
+  </div>
+
+  <script>
+    // Video elementine eriştik
+    const video = document.getElementById('video');
+    // Eğer kullanıcı medyası verisini alabiliyorsak
+    if (navigator.mediaDevices.getUserMedia) {
+      // Medya verisine eriş, video olsun.
+      navigator.mediaDevices.getUserMedia({
+        video: true
+      }).then((stream) => {
+        // Eğer başarılı oldu ise
+        video.srcObject = stream; // gelen video akışını elemente gönder
+        // Eğer meta verisi yüklenmişse
+        video.onloadedmetadata = function(e) {
+            video.play(); // Videoyu oynat.
+        };
+        // Eğer bir hata olursa konsola yaz
+      }).catch(error => console.log(error));
+    }
+   </script>
+
+
+
+</body>
+</html>
